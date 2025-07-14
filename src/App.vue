@@ -1,8 +1,10 @@
 <script setup>
-  import GameGrid from './assets/components/GameGrid.vue';
+import Task from './components/Task.vue';
+  /*import GameGrid from './assets/components/GameGrid.vue';
   import GameInfo from './assets/components/GameInfo.vue';
   import Controls from './assets/components/Controls.vue';
   import { ref } from 'vue';
+  import Task from './components/Task.vue';
   const cellBgColor = (cellValue) => {
       switch(cellValue) {
         case '':
@@ -192,17 +194,18 @@
   }
   }
 
-  startGame()
+  startGame()*/
   </script>
 
 <template>
-  <div class="wrapper bg-amber-50 h-screen w-screen p-3">
+  <!--<div class="wrapper bg-amber-50 h-screen w-screen p-3">
     <div class="game-container mx-auto px-10 w-150">
       <GameInfo :score="score" />
       <GameGrid :game-grid="gameGrid"/>
       <Controls @send-curr-direction="handleSentDirection"/>
     </div>
-  </div>  
+  </div>-->  
+<Task/>
 </template>
 
 <style>
